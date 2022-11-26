@@ -1,0 +1,24 @@
+.image {
+    position: absolute;
+    background: transparent url('/sprite2.png') 0 0 no-repeat;
+    height: 205px;
+    width: 200px;
+    transform: translate(-50%, -50%);
+    animation: fly 1s steps(25) 1;
+    opacity: 0;
+    z-index: 99;
+}
+
+@keyframes fly {
+    100% {
+        background-position: -5000px 0;
+        left: 110%;
+        opacity: 0;
+    }
+
+    0% {
+        left: -10%;
+        right: auto;
+        opacity: 1;
+    }
+}
