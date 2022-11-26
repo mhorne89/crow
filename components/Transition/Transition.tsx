@@ -9,7 +9,7 @@ export const Transition = () => {
   useEffect(() => {
     const res: BirdConfig[] = [...Array(500)].map((_, index) => {
       return {
-        delay: (index * 4) / 3,
+        delay: index * 4,
         size: Math.random(),
         positionY: Math.floor(Math.random() * (window.innerHeight + 1)),
       };
