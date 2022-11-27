@@ -1,11 +1,16 @@
-.image {
-    background: transparent url('/sprite2.png') 0 0 no-repeat;
-    height: 205px;
-    width: 200px;
-    transform: translate(-50%, -50%);
-    animation: fly 1s steps(25) infinite;
+.block {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    animation-name: blackout;
+    animation-delay: 2s;
+    animation-duration: .3s;
+    opacity: 0;
 }
 
-@keyframes fly {
-    100% { background-position: -5000px 0; }
+@keyframes blackout {
+    100% { opacity: 1 }
 }
